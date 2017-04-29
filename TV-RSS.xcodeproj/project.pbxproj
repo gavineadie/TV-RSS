@@ -34,6 +34,7 @@
 		86A6131F1EB528AE003C0BB9 /* ItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
 		86A613201EB528AE003C0BB9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		86A613211EB528AE003C0BB9 /* StoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryView.xib; sourceTree = "<group>"; };
+		86D8A50D1EB531DF006AFB63 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				86A6130B1EB527FA003C0BB9 /* TV-RSS */,
+				86D8A50C1EB531C2006AFB63 /* Words */,
 				86A6130A1EB527FA003C0BB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,12 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				86A6130C1EB527FA003C0BB9 /* AppDelegate.swift */,
+				86A6130E1EB527FA003C0BB9 /* ViewController.swift */,
+				86A613201EB528AE003C0BB9 /* MainViewController.swift */,
+				86A6131D1EB528AE003C0BB9 /* FeedViewController.swift */,
 				86A6131B1EB528AE003C0BB9 /* FeedEngine.swift */,
 				86A6131C1EB528AE003C0BB9 /* FeedTableView.swift */,
-				86A6131D1EB528AE003C0BB9 /* FeedViewController.swift */,
 				86A6131E1EB528AE003C0BB9 /* ItemCell.swift */,
-				86A613201EB528AE003C0BB9 /* MainViewController.swift */,
-				86A6130E1EB527FA003C0BB9 /* ViewController.swift */,
 				86A613101EB527FA003C0BB9 /* Main.storyboard */,
 				86A613211EB528AE003C0BB9 /* StoryView.xib */,
 				86A6131F1EB528AE003C0BB9 /* ItemView.xib */,
@@ -80,6 +82,14 @@
 				86A613151EB527FA003C0BB9 /* Info.plist */,
 			);
 			path = "TV-RSS";
+			sourceTree = "<group>";
+		};
+		86D8A50C1EB531C2006AFB63 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				86D8A50D1EB531DF006AFB63 /* README.md */,
+			);
+			name = Words;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +125,7 @@
 					86A613081EB527FA003C0BB9 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = CXE9ZR7J3U;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};

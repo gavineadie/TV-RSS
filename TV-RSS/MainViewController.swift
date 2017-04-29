@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
         feedViewControllers = self.childViewControllers as! [FeedViewController]
 
         for (index,feedViewController) in feedViewControllers.enumerated() {
-            feedViewController.feedEngine.readFeed(feedLink: feedLinks[index])
+            feedViewController.feedEngine.readFeed(feedLinks[index])
         }
 
     }
@@ -51,7 +51,7 @@ class MainViewController: UIViewController {
         for (index,feedViewController) in feedViewControllers.enumerated() {
 
             feedViewController.feedEngine.zeroFeed()
-            feedViewController.feedEngine.readFeed(feedLink: feedLinks[index])
+            feedViewController.feedEngine.readFeed(feedLinks[index])
             
         }
 

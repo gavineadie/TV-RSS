@@ -20,7 +20,7 @@ class FeedEngine : NSObject, XMLParserDelegate {
     fileprivate var foundCharacters = ""
 
 
-    func readFeed(feedLink:String) {
+    func readFeed(_ feedLink:String) {
 
         guard let parser = XMLParser(contentsOf: URL(string: feedLink)!) else {
             Swift.print("### XMLParser(\(feedLink)) failure")
@@ -38,7 +38,7 @@ class FeedEngine : NSObject, XMLParserDelegate {
 
     }
 
-    public func parser(_ parser: XMLParser,
+    open func parser(_ parser: XMLParser,
                        didStartElement elementName: String,
                        namespaceURI: String?,
                        qualifiedName qName: String?,
@@ -50,7 +50,7 @@ class FeedEngine : NSObject, XMLParserDelegate {
 
     }
 
-    public func parser(_ parser: XMLParser, foundCharacters string: String) {
+    open func parser(_ parser: XMLParser, foundCharacters string: String) {
 
         guard string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).characters.count > 0 else { return }
 
@@ -58,7 +58,7 @@ class FeedEngine : NSObject, XMLParserDelegate {
 
     }
 
-    public func parser(_ parser: XMLParser, didEndElement elementName: String,
+    open func parser(_ parser: XMLParser, didEndElement elementName: String,
                        namespaceURI: String?, qualifiedName qName: String?) {
 
         switch elementName.lowercased() {
@@ -94,13 +94,13 @@ class FeedEngine : NSObject, XMLParserDelegate {
 
     }
 
-    public func parserDidEndDocument(_ parser: XMLParser) {
+    open func parserDidEndDocument(_ parser: XMLParser) {
 
         Swift.print("### parserDidEndDocument: \(parser.description)")
 
     }
 
-    public func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
+    open func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
 
         Swift.print("### parseErrorOccurred: \(parseError)")
 
