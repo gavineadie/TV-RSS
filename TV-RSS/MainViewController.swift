@@ -31,7 +31,7 @@ class MainViewController: UIViewController {
 /*┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ For now, there only four FeedTableViews .. they should be setup from the StoryBoard by now ..    │
   └──────────────────────────────────────────────────────────────────────────────────────────────────┘*/
-        feedViewControllers = self.childViewControllers as! [FeedViewController]
+        feedViewControllers = self.children as! [FeedViewController]
 
         for (index,feedViewController) in feedViewControllers.enumerated() {
             feedViewController.feedEngine.readFeed(feedLinks[index])
